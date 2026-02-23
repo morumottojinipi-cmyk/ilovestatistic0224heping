@@ -10,3 +10,17 @@
 
 #你交出去的小論文絕對不能擺這些東西，你要精簡 + 保留關鍵數據在你的小論文裏面，但不會那麼多，大概一個統計只會用150字來描述吧
 #因爲又早八而且現在1點了想休息了，我先示範四個，你們趕快寫寫看，應該一個晚上就能搞定敘述性統計的所有問題，寫完你們可以給我看一眼再放上小論文，加油 晚安 我得先休息了
+
+#分析的項目有
+1. ERT 是否與改善相關？
+X=X= ERT_used（有/無） vs Y=Y= Clinical_outcome（改善/未改善），分層：Age_Group（或再加 Resp_symptoms）。​
+2. 早期治療是否與改善相關？（把 ERT_start_age 做分組後卡方）
+先把 ERT_start_age 分箱（例如 ≤18、19–40、>40，或用中位數切兩組），做 X=X= 早治療/晚治療 vs Y=Y= 改善/未改善，分層：Age_Group 或 Delay_years 分組（例如 ≤36 月、>36 月）。​
+3. 基因型是否和表現型（呼吸/心臟）相關？
+X=X= GAA_minus32_13TG（有/無） vs Y=Y= Resp_symptoms（有/無），分層：Age_Group。​
+X=X= GAA_minus32_13TG（有/無） vs Y=Y= Cardiac_involvement（有/無），分層：Age_Group。​
+4. 診斷延遲是否與起病型態或呼吸症狀相關？（Delay_years 分組後卡方）
+先把 Delay_years 二分（例如 >36 月 vs ≤36 月），做 X=X= Onset_pattern（可先合併成「肌無力主訴」vs「其他」避免稀疏）或 X=X= Resp_symptoms（有/無），分層：Age_Group。​
+不良反應（AE）與 ERT/藥物的關聯（但可能會很稀疏）
+X=X= ERT_used（有/無） vs Y=Y= AE（有/無），分層：Age_Group。​
+​
